@@ -1,0 +1,13 @@
+#* java -ea tablut.Main
+# Check that king move commands work correctly.
+manual white
+manual white
+h5-6
+e4-b
+h6-7
+dump
+e5-4
+dump
+h7-8
+e4-h
+dump

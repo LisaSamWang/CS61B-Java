@@ -1,0 +1,41 @@
+#* java -ea tablut.Main
+# Make sure erroneous moves/commands have no effect.
+manual white
+# Move out of turn
+e3-d
+dump
+# Move non-existent piece
+b2-3
+dump
+
+# Bad move syntax
+b7
+dump
+yuch
+dump
+
+i6-9
+dump
+# Move out of turn
+i5-6
+dump
+# Move on top of piece
+e5-4
+dump
+f5-9
+dump
+
+f5-8
+dump
+# Move on top of enemy piece
+a6-e
+dump
+# Move through own piece
+a5-1
+dump
+# Move through enemy piece
+a6-h
+dump
+
+
+quit

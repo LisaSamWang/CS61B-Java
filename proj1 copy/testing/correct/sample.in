@@ -1,0 +1,15 @@
+2, aman@fivetran.com, Aman Preet, Debugging, null pointer exception
+1, lisa@mail.com, lisa wang, conceptual, i dont understand q1
+
+
+
+
+
+
+
+
+try (ResultSet = res = file.executeQuery()) { //use the file name
+res.next(); //gives whole row
+String name = res.getString (columnname);
+//THEN use strings to do data processing.
+}

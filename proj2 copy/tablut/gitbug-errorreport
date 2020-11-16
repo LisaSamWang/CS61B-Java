@@ -1,0 +1,48 @@
+GITBUG ERROR REPORT
+
+1. Type of operating system you are using to produce this error:
+MacPro
+IntelliJ.
+
+2. Version of the Java system you are using (java -version).
+
+openjdk version "12.0.2" 2019-07-16
+
+3. Subdirectory of your Git working directory to use as the current
+   directory when compiling and running your program.
+
+cd repo/proj2
+
+
+4. EXACT sequence of commands that will cause the error you are seeing,
+   including anything needed to compile and execute the program.
+   It is NOT acceptable to say "any execution of the program fails"; give
+   us a specific one.
+
+run Main and type in auto black, set maxDepth to 4.
+
+I have looked over the lines and do not understand what could be causing the empty stack. Error does not occur when maxDepth is set to 3 or lower.
+
+
+5. What you see when you execute the commands in 4.
+
+> auto black
+*i4-3
+*e6-d
+Exception in thread "main" java.util.EmptyStackException
+	at java.base/java.util.Stack.peek(Stack.java:102)
+	at tablut.Board.undo(Board.java:404)
+	at tablut.AI.findMax(AI.java:260)
+	at tablut.AI.findMove(AI.java:103)
+	at tablut.AI.findMin(AI.java:273)
+	at tablut.AI.findMove(AI.java:111)
+	at tablut.AI.findMax(AI.java:246)
+	at tablut.AI.findMove(AI.java:103)
+	at tablut.AI.findMin(AI.java:273)
+	at tablut.AI.findMove(AI.java:111)
+	at tablut.AI.findMove(AI.java:68)
+	at tablut.AI.myMove(AI.java:46)
+	at tablut.Controller.play(Controller.java:55)
+	at tablut.Main.main(Main.java:55)
+
+Process finished with exit code 1

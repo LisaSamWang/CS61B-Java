@@ -1,0 +1,46 @@
+﻿GITBUG ERROR REPORT
+
+
+1. Type of operating system you are using to produce this error:
+
+
+Both my terminal and IntelliJ.
+
+
+2. Version of the Java system you are using (java -version).
+
+
+openjdk version "12.0.2" 2019-07-16
+
+
+3. Subdirectory of your Git working directory to use as the current
+   directory when compiling and running your program.
+        
+        repo/proj1
+
+
+4. EXACT sequence of commands that will cause the error you are seeing,
+   including anything needed to compile and execute the program.
+   It is NOT acceptable to say "any execution of the program fails"; give
+   us a specific one.
+
+
+        testing/format/format.conf testing/format/format.in
+        testing/permuted/permuted.conf testing/permuted/permuted.in
+        testing/newchars/newchars.conf testing/newchars/newchars.in
+(do this on IntelliJ as Main configurations).
+        testing/reduced/reduced.conf testing/reduced/reduced.in
+        testing/carroll/carroll.conf testing/carroll/carroll.in
+        
+
+
+5. What you see when you execute the commands in 4.
+
+
+FOR FIRST 3 COMMANDS: The exact same output as AG wants but AG marks me as wrong, including the lines.
+
+
+FOR REDUCED: The last letter is wrong for both lines of output. 
+
+
+FOR CARROLL: All the outputs are wrong (different from AG).

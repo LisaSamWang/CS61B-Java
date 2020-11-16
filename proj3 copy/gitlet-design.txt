@@ -1,0 +1,37 @@
+Gitlet Design Document
+----------------------
+
+Create different classes for Commits, Stage, and Blobs. Also have a mega class for Gitlet. Main would create Gitlet if
+if does not exist yet. Otherwise, it would get the gitlet and work with it, calling the commands.
+
+Classes and Data Structures
+---------------------------
+
+Class Gitlet:
+-constructor takes in no arguments and calls init if it is not initialized.
+-has all the methods.
+-creates commits and blobs as needed.
+
+Class Commit:
+-stores commits and its information.
+
+Class Blobs:
+-stores contents of files as its sha-1 code and the name of the file.
+
+Class Stage:
+-helper class that represents the added files that are not yet committed.
+
+Algorithms
+----------
+
+Used breadth-first search to do find. Other than that, just java Files and Hashmaps, and some Arraylists as needed.
+Classes were the main thing used.
+add(filename) takes in the file name and adds it to staging area.
+commit(message) takes in the commit message and commits all files in staging area.
+rm(filename) just removes the file.
+
+Persistence
+-----------
+
+Gitlet is initialized to have a subdirectory called staging that stores added files, another subdir called commits
+that stores the commits in the forms of the sha-1 codes, and another remote subdir. The remote subdir is for EC later.
